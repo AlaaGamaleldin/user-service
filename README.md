@@ -1,10 +1,20 @@
 # UserService
+## Table of content
+1) [Description](#description)
+2) [Project Configuration](#project-configuration)
+3) [Run the Project](#run-the-project-in-dev-mode)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-## Development server
+ ## Description
+- Service to manage user entity, similar to a socil media apps.
+- User can login, searching for a friends in the area, updating his profile, and etc.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Project Configuration
+### Libraries
+- Angular
+
+## Run the Project in Dev mode
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
