@@ -7,15 +7,15 @@ export interface User{
     lastName: string,
     userTitle: string,
     userAvatarUrl: string,
-    friendsVisibility: string,
-    phones: [{
+    friendsVisibility: string, //Create enum with the name of Visibility having the follwoing values FRIENDS, PUBLIC, PRIVATE, then use the enum as datatype here 
+    phones: [{ // extract the phone into separate interface 
         phoneId: string,
         title: string,
         number: number,
         visibility: string,
  } ]
  addresses: [
-    {
+    { // extract the Address into separate interface 
       addressId: string,
       title: string,
       country: string,
@@ -29,7 +29,7 @@ export interface User{
     }
   ],
   socialMedia: [
-    {
+    { // extract the ScoialMedia into separate interface 
       socialId: string,
       title: string,
       url: string,
@@ -37,7 +37,7 @@ export interface User{
     }
   ],
   friends: [
-    {
+    { // extract the Friens into separate interface 
       friendId: string,
       username: string,
       firstName: string,
