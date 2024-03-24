@@ -1,8 +1,8 @@
-import { Addresses } from "./addresses";
+import { Addresses } from "./addresses.interface";
 import { Visibility } from "./enums/friendsVidibility.enum";
-import { Frinds } from "./frinds";
-import { Phone } from "./phone";
-import { SocialMedia } from "./socialMedia";
+import { Frinds } from "./frinds.interface";
+import { Phone } from "./phone.interface";
+import { SocialMedia } from "./socialMedia.interface";
 export interface User{
     userId: string;
     username: string;
