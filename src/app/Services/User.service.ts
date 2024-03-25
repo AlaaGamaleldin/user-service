@@ -9,7 +9,7 @@ export class UserService{
     
     constructor(private http: HttpClient) {}
 
-  getUser(): Observable<User> {
-    return this.http.get<User>('./assets/UserService.json');
+  getUser(): Observable<User[]> {
+    return this.http.get<User[]>('./assets/UserService.json');
   }
 }
