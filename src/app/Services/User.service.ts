@@ -9,7 +9,14 @@ export class UserService{
     
     constructor(private http: HttpClient) {}
 
-  getUser(): Observable<User> {
-    return this.http.get<User>('./assets/UserService.json');
+  getUser(): Observable<User[]> {
+    return this.http.get<User[]>('./assets/UserService.json');
+  }
+  getUserById(id: string){
+    let userFound: User;
+     this.getUser().subscribe((user: User[]) => {
+      userFound = user.find((userId: User) => userId.userId === id) as User
+    });
+    return userFound;
   }
 }

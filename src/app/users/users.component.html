@@ -1,5 +1,30 @@
-<div class="users-page-main-container" *ngIf="user">
-    <div class="user-card">
-        <h1>{{ user.firstName }}</h1>
+
+<div class="user-page-main-container">
+    <div class="user-banner">
+        <div class="user-banner-layover">
+            <h1>keep conect to the other.</h1>
+        </div>
+    </div>
+    <div class="user-page-all-users">
+        <h2 class="frinds-list">frind list</h2>
+        <hr>
+        <div class="user-page-users-list">
+            <div class="user-card" *ngFor="let user of users">
+                <div class="user-image-background">
+                    <img [src]="" class="user-image">
+                </div>
+                <div class="user-name">
+                    {{ (user.firstName)+' '+(user.lastName)  }}
+                </div>
+                <div class="user-title">
+                    {{user.userTitle}}
+                </div>
+                <div class="country">
+                    
+                </div>
+                <button class="btn-connect" (click)="viewUser(user)">CONNECT</button>
+            </div>
+        </div>
     </div>
 </div>
+
