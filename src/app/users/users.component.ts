@@ -1,6 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { User } from 'src/Model/user.interface';
 import { UserService } from '../Services/User.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -9,13 +10,18 @@ import { UserService } from '../Services/User.service';
 })
 export class UsersComponent implements OnInit {
   
-  user: User[] = [];
+  users: User[] = [];
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { 
+    
+  }
   
   ngOnInit(){
     this.userService.getUser().subscribe(user => {
-      this.user = user;
+      this.users = user;
     });
+  }
+  viewUser(user: User): void{
+    this.router.navigate(['/profile/' + user.userId]);
   }
 }
