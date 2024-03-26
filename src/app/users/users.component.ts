@@ -17,10 +17,12 @@ export class UsersComponent implements OnInit {
   }
   
   ngOnInit(){
-    this.userService.getUser().subscribe(user => {
+    this.userService.getUser().subscribe((user: User[]) => {
       this.users = user;
     });
   }
+
+  
   viewUser(user: User): void{
     this.router.navigate(['/profile/' + user.userId]);
   }
