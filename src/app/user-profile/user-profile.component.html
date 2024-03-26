@@ -11,9 +11,9 @@
             <img src="" alt="" class="pro-img">
         </div>
         <div class="name">
-            <h2 class="full-name"></h2>
-            <h5 class="title">Front End Deveolper</h5>
-            <h4 class="country">Egypt</h4>
+            <h2 class="full-name">{{user?.lastName}} {{user?.firstName}} {{user?.middleName}} </h2>
+            <h5 class="title">{{user?.userTitle}}</h5>
+            <h4 class="country">{{ getUserCountry(user?.addresses) }}</h4>
         </div>
         
     </div>
