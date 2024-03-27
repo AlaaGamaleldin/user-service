@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    background-color: #28282B;
+    color: white;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo{
+    margin-left: 50px;
+}
+.btn-login{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(201, 235, 182);
+}
+.btn-home{
+    margin-right: 15px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(201, 235, 182);
+}

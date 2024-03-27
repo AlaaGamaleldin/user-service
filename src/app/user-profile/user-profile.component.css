@@ -2,8 +2,8 @@
     display: flex;
 }
 .container{
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 80vh;
     background-color:aquamarine;
     margin: auto;
     border-radius: 10px;
