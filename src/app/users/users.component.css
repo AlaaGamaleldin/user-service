@@ -4,19 +4,19 @@
     background-color: #efefef;
 }
 .user-banner{
-    width: 100%;
-    height: 280px;
+    width: 75%;
+    height: 200px;
     background-color: #F4D03F;
+    text-align: center;
+    color: white;
+    padding: 100px 200px;
   }
   
   .user-banner-layover{
     width: 100%;
     height: 280px;
     background-color: #28282B;
-    opacity: 0.85;
-    text-align: center;
-    color: white;
-    padding: 100px 200px;
+    
   }
   .user-page-all-users{
     padding: 50px 80px;
